@@ -73,10 +73,10 @@ namespace itis {
         // Tip 1: рассмотрите случай, когда удаляется элемент в начале списка
         // Tip 2: используйте функцию find_node(index)
         if(index == 0){
-            Node *head = head_;
-            Element e = head->data;
+            Node *head = head_->next;
+            Element e = head_->data;
             delete head_;
-            head_ = head->next;
+            head_ = head;
             size_--;
             return e;
         }
