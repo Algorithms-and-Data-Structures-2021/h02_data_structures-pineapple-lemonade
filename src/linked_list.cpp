@@ -74,10 +74,11 @@ namespace itis {
         // Tip 2: используйте функцию find_node(index)
         if(index == 0){
             Node *head = head_;
+            Element e = head->data;
             delete head_;
-            head_ =head->next;
+            head_ = head->next;
             size_--;
-            return head->data;
+            return e;
         }
         Node *removed_node = find_node(index);
         Node *prev_node = find_node(index - 1);
