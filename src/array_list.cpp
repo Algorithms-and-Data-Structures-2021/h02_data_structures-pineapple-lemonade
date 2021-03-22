@@ -135,7 +135,7 @@ namespace itis {
         auto new_data = new Element[new_capacity];
 
 // 2. копируем данные на новый участок
-        std::copy(data_, data_ + size_ - 1, new_data);
+        std::copy(data_, data_ + size_, new_data);
 
 // 3. заполняем "свободные" ячейки памяти значением Element::UNINITIALIZED
         std::fill(new_data + size_, new_data + new_capacity, Element::UNINITIALIZED);

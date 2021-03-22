@@ -8,11 +8,11 @@ using namespace itis;
 int main(int argc, char **argv) {
     std::cout << "Hello, stranger!" << std::endl;
 
-    auto array_list = new ArrayList();
-    array_list->Add(Element::BEAUTIFUL_FLOWERS);
-    array_list->Add(Element::GRAVITY_GUN);
-    array_list->Add(Element::DRAGON_BALL);
-    array_list->Insert(0,Element::CHERRY_PIE);
-    std::cout << array_list[0];
+    auto linked_list = new LinkedList();
+//    linked_list->Add(Element::CHERRY_PIE);
+//    linked_list->Add(Element::GRAVITY_GUN);
+//    linked_list->Add(Element::DRAGON_BALL);
+    linked_list->Insert(0,Element::BEAUTIFUL_FLOWERS);
+    std::cout << linked_list[0] << linked_list->GetSize();
     return 0;
 }
